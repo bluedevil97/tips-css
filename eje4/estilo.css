@@ -1,0 +1,51 @@
+body{
+	margin: 0px;
+	background: #d1d1d1;
+}
+
+header{
+	background-image: url('1.png');
+	background-position: center;
+	background-size: cover;
+	height: 480px;
+	position: relative;
+}
+
+header:after{
+	content: "";
+	background-color: rgba(0,0,0,.3);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+header a{
+	background: #3b5998;
+	border-bottom: 2px solid #294874;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 36px;
+	width: 110px;
+	top:50%;
+	left: 50%;
+	position: absolute;
+	margin-top: -18px;
+	margin-left:-55px;
+	/*tiempo en segundos para crecer 30% de un segundo*/
+	transition: .3s all;
+	/*hace que el boton sea un elemento independiente*/
+	z-index: 1;
+}
+
+header a:hover{
+
+	transform: scale(1.2);
+	opacity: .9;
+}

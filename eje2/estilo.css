@@ -1,0 +1,45 @@
+body{
+	margin: 0px;
+	background: #d1d1d1;
+}
+
+.main-menu{
+	background: #3b5998;
+	height: 45px;
+	border-bottom: 1px solid #29487d;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-menu a{
+	font-family: arial;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	flex: 1;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.main-menu a:hover{
+	background: rgba(0,0,0,.1);
+}
+
+.active{
+	background: #29487d;
+}
+
+@media (max-width: 780px)
+{
+	.main-menu{
+		height: auto;
+		border-bottom: 0px;
+		display: block;
+	}
+	.main-menu a{
+		height: 45px;
+		border-bottom: 1px solid #29487d;
+	}
+}

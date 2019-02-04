@@ -1,0 +1,39 @@
+body{
+	margin: 0px;
+	background: #d1d1d1;
+}
+
+.main-menu{
+	display: flex;
+	width: 500px;
+	margin: auto;
+	justify-content: space-between;
+
+}
+
+.main-menu a{
+	flex: 1;
+	font-family: arial;
+	height: 45px;
+	display: flex;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	background: #3b5998;
+	margin: 0px 5px;
+	transform: skew(135deg);
+
+}
+.main-menu a span{
+	transform: skew(45deg)
+}
+
+.main-menu a:hover{
+	background: #29487d;
+}
+.main-menu a.active{
+	background: #29487d;
+}
